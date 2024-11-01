@@ -1,0 +1,31 @@
+#homeWelcome {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+
+    .overlay-image1 {
+      position: absolute;
+      max-width: 590px;
+      width: 100%;
+      z-index: 1;
+      padding: 0 16px;
+    }
+
+    .overlay-image2 {
+      max-width: 700px;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+}
