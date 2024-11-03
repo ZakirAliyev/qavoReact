@@ -1,5 +1,7 @@
 import './index.scss'
 import HomeNavbar from "../HomeNavbar/index.jsx";
+import qavoBlack from "/src/assets/qavoBlack1.png"
+import HomeLeftMenu from "../HomeLeftMenu/index.jsx";
 
 function HomeContactUs() {
     return (
@@ -8,10 +10,8 @@ function HomeContactUs() {
             <section id={"homeContactUs"}>
                 <div className={"container"}>
                     <div className={"row"}>
-                        {/*<div className={"col-1"}>*/}
-                        {/*    <h2>asd</h2>*/}
-                        {/*</div>*/}
-                        <div className={"col-12 cen"}>
+                        <HomeLeftMenu/>
+                        <div className={"col-11 cen"}>
                             <h2>AXTARDıĞIN PARTNİYOR BİZİK!</h2>
                             <h3>Bizimlə əlaqəyə keç və rəqəmsalda uğurla addımla</h3>
                             <div className={"row row1"}>

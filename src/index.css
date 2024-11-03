@@ -11,167 +11,207 @@
     font-family: 'Poppins', sans-serif;
 }
 
+button {
+    outline: none;
+    cursor: pointer;
+}
+
 .container {
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
 }
-.col-1{
+
+.col-1 {
     width: calc(100% / 12 * 1);
     padding: 16px;
 }
-.col-2{
+
+.col-2 {
     width: calc(100% / 12 * 2);
     padding: 16px;
 }
-.col-3{
+
+.col-3 {
     width: calc(100% / 12 * 3);
     padding: 16px;
 }
-.col-4{
+
+.col-13 {
+    width: calc(100% / 12 * 3);
+    padding: 26px;
+}
+
+.col-4 {
     width: calc(100% / 12 * 4);
     padding: 16px;
 }
-.col-5{
+
+.col-5 {
     width: calc(100% / 12 * 5);
     padding: 16px;
 }
-.col-6{
+
+.col-6 {
     width: calc(100% / 12 * 6);
     padding: 16px;
 }
-.col-7{
+
+.col-7 {
     width: calc(100% / 12 * 7);
     padding: 16px;
 }
-.col-8{
+
+.col-8 {
     width: calc(100% / 12 * 8);
     padding: 16px;
 }
-.col-9{
+
+.col-9 {
     width: calc(100% / 12 * 9);
     padding: 16px;
 }
-.col-10{
+
+.col-10 {
     width: calc(100% / 12 * 10);
     padding: 16px;
 }
-.col-11{
+
+.col-11 {
     width: calc(100% / 12 * 11);
     padding: 16px;
 }
-.col-12{
+
+.col-12 {
     width: calc(100% / 12 * 12);
     padding: 16px;
 }
 
 /* for tablet */
-@media screen and (max-width: 992px) and (min-width:768px) {
-    .col-md-1{
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .col-md-1 {
         width: calc(100% / 12 * 1);
         padding: 16px;
     }
-    .col-md-2{
+
+    .col-md-2 {
         width: calc(100% / 12 * 2);
         padding: 16px;
     }
-    .col-md-3{
+
+    .col-md-3 {
         width: calc(100% / 12 * 3);
         padding: 16px;
     }
-    .col-md-4{
+
+    .col-md-4 {
         width: calc(100% / 12 * 4);
         padding: 16px;
     }
-    .col-md-5{
+
+    .col-md-5 {
         width: calc(100% / 12 * 5);
         padding: 16px;
     }
-    .col-md-6{
+
+    .col-md-6 {
         width: calc(100% / 12 * 6);
         padding: 16px;
     }
-    .col-md-7{
+
+    .col-md-7 {
         width: calc(100% / 12 * 7);
         padding: 16px;
     }
-    .col-md-8{
+
+    .col-md-8 {
         width: calc(100% / 12 * 8);
         padding: 16px;
     }
-    .col-md-9{
+
+    .col-md-9 {
         width: calc(100% / 12 * 9);
         padding: 16px;
     }
-    .col-md-10{
+
+    .col-md-10 {
         width: calc(100% / 12 * 10);
         padding: 16px;
     }
-    .col-md-11{
+
+    .col-md-11 {
         width: calc(100% / 12 * 11);
         padding: 16px;
     }
-    .col-md-12{
+
+    .col-md-12 {
         width: calc(100% / 12 * 12);
         padding: 16px;
     }
 }
 
 /* for large phone */
-@media screen and (max-width: 768px) and (min-width:576px) {
-    .col-sm-1{
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .col-sm-1 {
         width: calc(100% / 12 * 1);
         padding: 16px;
     }
-    .col-sm-2{
+
+    .col-sm-2 {
         width: calc(100% / 12 * 2);
         padding: 16px;
     }
-    .col-sm-3{
+
+    .col-sm-3 {
         width: calc(100% / 12 * 3);
         padding: 16px;
     }
-    .col-sm-4{
+
+    .col-sm-4 {
         width: calc(100% / 12 * 4);
         padding: 16px;
     }
-    .col-sm-5{
+
+    .col-sm-5 {
         width: calc(100% / 12 * 5);
         padding: 16px;
     }
-    .col-sm-6{
+
+    .col-sm-6 {
         width: calc(100% / 12 * 6);
         padding: 16px;
     }
-    .col-sm-7{
+
+    .col-sm-7 {
         width: calc(100% / 12 * 7);
         padding: 16px;
     }
-    .col-sm-8{
+
+    .col-sm-8 {
         width: calc(100% / 12 * 8);
         padding: 16px;
     }
-    .col-sm-9{
+
+    .col-sm-9 {
         width: calc(100% / 12 * 9);
         padding: 16px;
     }
-    .col-sm-10{
+
+    .col-sm-10 {
         width: calc(100% / 12 * 10);
         padding: 16px;
     }
-    .col-sm-11{
+
+    .col-sm-11 {
         width: calc(100% / 12 * 11);
         padding: 16px;
     }
-    .col-sm-12{
+
+    .col-sm-12 {
         width: calc(100% / 12 * 12);
         padding: 16px;
     }
@@ -179,51 +219,62 @@
 
 /* for small phone */
 @media screen and (max-width: 576px) {
-    .col-xs-1{
+    .col-xs-1 {
         width: calc(100% / 12 * 1);
         padding: 16px;
     }
-    .col-xs-2{
+
+    .col-xs-2 {
         width: calc(100% / 12 * 2);
         padding: 16px;
     }
-    .col-xs-3{
+
+    .col-xs-3 {
         width: calc(100% / 12 * 3);
         padding: 16px;
     }
-    .col-xs-4{
+
+    .col-xs-4 {
         width: calc(100% / 12 * 4);
         padding: 16px;
     }
-    .col-xs-5{
+
+    .col-xs-5 {
         width: calc(100% / 12 * 5);
         padding: 16px;
     }
-    .col-xs-6{
+
+    .col-xs-6 {
         width: calc(100% / 12 * 6);
         padding: 16px;
     }
-    .col-xs-7{
+
+    .col-xs-7 {
         width: calc(100% / 12 * 7);
         padding: 16px;
     }
-    .col-xs-8{
+
+    .col-xs-8 {
         width: calc(100% / 12 * 8);
         padding: 16px;
     }
-    .col-xs-9{
+
+    .col-xs-9 {
         width: calc(100% / 12 * 9);
         padding: 16px;
     }
-    .col-xs-10{
+
+    .col-xs-10 {
         width: calc(100% / 12 * 10);
         padding: 16px;
     }
-    .col-xs-11{
+
+    .col-xs-11 {
         width: calc(100% / 12 * 11);
         padding: 16px;
     }
-    .col-xs-12{
+
+    .col-xs-12 {
         width: calc(100% / 12 * 12);
         padding: 16px;
     }
