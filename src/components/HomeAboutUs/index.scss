@@ -1,0 +1,65 @@
+#homeAboutUs {
+  background-color: black;
+  height: calc(100vh - 89px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+
+  .firstCol {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    position: relative;
+    left: -220px;
+    top: -30px;
+
+    img {
+      background-color: white;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    }
+
+    h3 {
+      transform: rotate(-90deg);
+      font-size: 16px;
+    }
+  }
+
+  h2 {
+    color: white;
+    font-size: 60px;
+  }
+
+  h3 {
+    color: white;
+    font-size: 33px;
+    font-weight: 300;
+    margin-top: -10px;
+  }
+
+  .cen {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    iframe {
+      width:950px;
+      height: 500px;
+    }
+
+    button {
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 40px;
+      outline: none;
+      border: 1px solid transparent;
+    }
+  }
+}
