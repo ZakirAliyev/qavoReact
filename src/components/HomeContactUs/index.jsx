@@ -6,7 +6,7 @@ import React, {useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function HomeContactUs() {
+function HomeContactUs(y) {
 
     useEffect(() => {
         AOS.init({
@@ -18,11 +18,10 @@ function HomeContactUs() {
 
     return (
         <>
-            <HomeNavbar/>
             <section id={"homeContactUs"}>
-                <div className={"container"} data-aos="fade-up">
+                <div className={"container"}>
                     <div className={"row"}>
-                        <HomeLeftMenu/>
+                        <HomeLeftMenu number={5} y={y}/>
                         <div className={"col-11 cen"}>
                             <h2>AXTARDıĞIN PARTNİYOR BİZİK!</h2>
                             <h3>Bizimlə əlaqəyə keç və rəqəmsalda uğurla addımla</h3>

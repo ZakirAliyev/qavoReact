@@ -11,6 +11,29 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    background: #000;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+
+
 button {
     outline: none;
     cursor: pointer;

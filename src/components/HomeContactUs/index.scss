@@ -1,11 +1,11 @@
 #homeContactUs {
   background-color: black;
-  height: calc(100vh - 89px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-
+  padding-top: 89px;
 
   .firstCol {
     display: flex;

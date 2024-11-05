@@ -1,6 +1,12 @@
 #homeNavbar {
   background-color: black;
   padding: 32px 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 999;
 
   nav {
     display: flex;
@@ -27,7 +33,7 @@
       transform: translateX(-50%);
 
       img {
-        width:150px;
+        width: 150px;
       }
     }
 
