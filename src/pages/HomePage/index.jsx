@@ -6,46 +6,65 @@ import HomeContactUs from "../../components/HomeContactUs/index.jsx";
 import HomeServices from "../../components/HomeServices/index.jsx";
 import HomeAboutUs from "../../components/HomeAboutUs/index.jsx";
 import HomeNavbar from "../../components/HomeNavbar/index.jsx";
+import HomeBanner from "../../components/HomeBanner/index.jsx";
 
 function HomePage() {
     const homePageRef = useRef(null);
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [scrolling, setScrolling] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-            if (homePageRef.current) {
-                const currentScrollPosition = homePageRef.current.scrollTop;
-                setScrollPosition(currentScrollPosition);
+        const handleWheel = (event) => {
+            if (scrolling) return;
+
+            const homePageElement = homePageRef.current;
+            if (homePageElement) {
+                const sectionHeight = window.innerHeight;
+                const scrollDown = event.deltaY > 0;
+                const targetPosition = scrollDown
+                    ? scrollPosition + sectionHeight
+                    : scrollPosition - sectionHeight;
+
+                setScrolling(true);
+                homePageElement.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth',
+                });
+
+                setTimeout(() => setScrolling(false), 800); // Geçiş süresi ayarı
+                setScrollPosition(targetPosition);
             }
         };
 
         const homePageElement = homePageRef.current;
-
         if (homePageElement) {
-            homePageElement.addEventListener('scroll', handleScroll);
+            homePageElement.addEventListener('wheel', handleWheel);
         }
 
         return () => {
             if (homePageElement) {
-                homePageElement.removeEventListener('scroll', handleScroll);
+                homePageElement.removeEventListener('wheel', handleWheel);
             }
         };
-    }, []);
+    }, [scrollPosition, scrolling]);
 
     return (
-        <section id="homePage" ref={homePageRef}>
-            <HomeNavbar />
+        <section id="homePage" ref={homePageRef} style={{scrollBehavior: 'smooth', overflowY: 'hidden'}}>
+            <HomeNavbar/>
             <div className="snapSection">
                 <HomeWelcome/>
             </div>
             <div className="snapSection">
-                <HomeAboutUs y={scrollPosition} />
+                <HomeBanner y={scrollPosition}/>
             </div>
             <div className="snapSection">
-                <HomeServices y={scrollPosition} />
+                <HomeAboutUs y={scrollPosition}/>
             </div>
             <div className="snapSection">
-                <HomeContactUs y={scrollPosition} />
+                <HomeServices y={scrollPosition}/>
+            </div>
+            <div className="snapSection">
+                <HomeContactUs y={scrollPosition}/>
             </div>
         </section>
     );

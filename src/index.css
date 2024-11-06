@@ -16,23 +16,23 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 1px;
-    height: 1px;
+    width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: black;
+    background: #1a1a1a;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: #333;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: black;
+    background: #555;
 }
-
-
 
 button {
     outline: none;
