@@ -19,7 +19,7 @@
     gap: 70px;
     position: relative;
     left: -220px;
-    top: -30px;
+    top: -10px;
 
     img {
       background-color: white;
@@ -52,7 +52,7 @@
     gap: 50px;
     position: relative;
     left: -35px;
-    margin-top: -100px;
+    margin-top: -80px;
 
     h2 {
       color: white;
@@ -61,6 +61,14 @@
       min-width: 950px;
       width: 100%;
       line-height: 70px;
+      z-index: 10;
+    }
+
+    h3 {
+      font-size: 330px;
+      position: absolute;
+      top: -130px;
+      left: -100px;
     }
   }
 
@@ -69,8 +77,8 @@
     background-color: white;
     width: 2000px;
     position: absolute;
-    top: -300px;
-    right: -680px;
+    top: 0;
+    right: -1080px;
     z-index: 1000;
     transform: rotate(45deg);
     border: 1px solid white;
@@ -109,8 +117,8 @@
     background-color: #212121;
     width: 4000px;
     position: absolute;
-    bottom: 300px;
-    left: -440px;
+    bottom: 200px;
+    left: -740px;
     z-index: 1000;
     transform: rotate(-15deg);
     border: 1px solid #212121;

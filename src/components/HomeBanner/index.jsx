@@ -19,13 +19,19 @@ function HomeBanner(y) {
             <section id={"homeBanner"}>
                 <div className={"container"}>
                     <div className={"row"}>
-                        <HomeLeftMenu number={2} y={y}/>
+                        <HomeLeftMenu number={1} y={y}/>
                         <div className={"col-11 cen"}>
                             <h2>Rəqəmsal.<span style={{
-                                color: '#7E7E7E'
+                                color: '#7E7E7E',
+                                textTransform: 'capitalize',
+                                fontWeight: '400'
                             }}>Dünyada.</span></h2>
                             <h2>Realistik Həllər.</h2>
                             <h2>& Daha Çoxu.</h2>
+                            <h3 style={{
+                                WebkitTextStroke: '1px #363636',
+                                color: 'black',
+                            }}>qavo</h3>
                         </div>
                     </div>
                     <div className="band">

@@ -7,6 +7,7 @@ import HomeServices from "../../components/HomeServices/index.jsx";
 import HomeAboutUs from "../../components/HomeAboutUs/index.jsx";
 import HomeNavbar from "../../components/HomeNavbar/index.jsx";
 import HomeBanner from "../../components/HomeBanner/index.jsx";
+import HomePortfolio from "../../components/HomePortfolio/index.jsx";
 
 function HomePage() {
     const homePageRef = useRef(null);
@@ -62,6 +63,9 @@ function HomePage() {
             </div>
             <div className="snapSection">
                 <HomeServices y={scrollPosition}/>
+            </div>
+            <div className="snapSection">
+                <HomePortfolio y={scrollPosition}/>
             </div>
             <div className="snapSection">
                 <HomeContactUs y={scrollPosition}/>
