@@ -1,5 +1,4 @@
     import './index.scss'
-    import HomeNavbar from "../HomeNavbar/index.jsx";
     import HomeLeftMenu from "../HomeLeftMenu/index.jsx";
     import React, { useEffect } from 'react';
     import AOS from 'aos';
